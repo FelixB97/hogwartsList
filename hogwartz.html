@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="backgroundImage"></div>
+    <section>
+    <nav>
+    <div id="filters">
+        <button id="currentButton">Current Students</button>
+        <button id="expelledButton">Expelled Students</button>
+        <button id="inqButton">Inquisitorial</button>
+        <button id="preButton">Prefects</button>
+
+        <select id="houses_select" name="houses">
+          <option value="starter" selected>no House selected</option>
+          <option value="gryffindor">Gryffindor</option>
+          <option value="hufflepuff">Hufflepuff</option>
+          <option value="ravenclaw">Ravenclaw</option>
+          <option value="slytherin">Slytherin</option>
+        </select> 
+
+        <button id="resetButton">Reset Filters</button>
+        
+    </div>
+    
+    <div id="studentStats">
+        <h4 id="currentStats">Current Students: </h4>
+        <h4 id="expelledStats">Expelled Students: </h4>
+        <h4>Students from each House:</h4>
+        <h5 id="gStats">Gryffindor: </h5>
+        <h5 id="hStats">Hufflepuff: </h5>
+        <h5 id="rStats">Ravenclaw: </h5>
+        <h5 id="sStats">Slytherin: </h5>
+        <h4 id="displayedStats">Currently Displayed Students: </h4>
+        <button id="hackingButton">HACK THE SYSTEM</button>
+    </div>
+    </nav>
+    <div id="searchFieldDiv"><h3>Search by Name:</h3><input type="text" id="searchField"></div>
+    
+    <div id="legend">
+        <h3>First Name:</h3>
+        <h3>Middle Name:</h3>
+        <h3>Last Name:</h3>
+        <h3>Gender:</h3>
+        <h3>House:</h3>
+        <h3>Blood-Status:</h3>
+    </div>
+<div id="relative">
+        <div>
+    <section class="listGrid"></section>
+    </div>
+</div>
+    <template class="listTemplate">
+        <article>
+            <div class="student">
+                <div class="firstName">
+                    <p></p>
+                </div>
+                <div class="middleName">
+                    <p></p>
+                </div>
+                <div class="lastName">
+                    <p></p>
+                </div>
+                <div class="gender">
+                    <p></p>
+                </div>
+                <div class="house">
+                    <p></p>
+                </div>
+                <div class="blood">
+                    <p></p>
+                </div>
+                <button class="expelliamus">Expell</button>
+                
+            </div>
+    </article>
+    </template>
+
+
+    <div class="hidden" id="popop">
+        <img src="" alt="image of student">
+        <h2 id="popopFirstName">first</h2>
+        <h2 id="popopMiddleName">middle</h2>
+        <h2 id="popopLastName">last</h2>
+        <h2 id="popopHouse">House</h2>
+        <h2 id="popopBlood">Blood</h2>
+        <div>
+            <h2 id="popopPrefect">pre</h2>
+            <button id="prefectButton">Toggle Prefect</button>
+        </div>
+        <div>
+            <h2 id="popopInquisitorial">inq</h2>
+            <button id="inquisitorialButton">Toggle Inquisitorial</button>
+        </div>
+        <div>
+            <h2 id="popopExpelled">expelled</h2>
+            <button id="expellSinglButton">Expell</button>
+        </div>
+        <div id="closeSingle">
+            <h3>X</h3>
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

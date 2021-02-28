@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  background-color: rgb(238, 238, 238);
+  position: relative;
+}
+
+#backgroundImage {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("background/thumbnail_concept.png");
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+}
+
+.student {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  max-width: 920px;
+}
+
+#legend h3 {
+  width: 140px;
+  cursor: pointer;
+}
+
+#legend h3:first-child {
+  padding-left: 20px;
+}
+
+.student div {
+  width: 140px;
+}
+
+#filters button {
+  height: 30px;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#legend h3:last-child {
+  pointer-events: none;
+}
+
+.student button {
+  cursor: pointer;
+  margin-right: 20px;
+  height: 30px;
+  align-self: center;
+}
+
+.expelledB {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#popop {
+  height: 700px;
+  width: 400px;
+  padding-left: 50px;
+  padding-top: 50px;
+  background-color: grey;
+  position: fixed;
+  left: 30vw;
+  top: 15vh;
+}
+
+#filters {
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+#houses_select {
+  height: 35px;
+  width: 140px;
+}
+
+#searchField {
+  height: 25px;
+  margin-bottom: 2px;
+}
+
+#filters button {
+  margin-top: 18px;
+}
+
+nav {
+  display: flex;
+  margin-left: 5%;
+  position: fixed;
+  top: 0;
+}
+
+#studentStats {
+  padding-left: 180px;
+  margin-top: 60px;
+}
+
+#studentStats h5 {
+  padding-left: 20px;
+}
+
+#closeSingle {
+  display: flex;
+  background-color: rgb(196, 196, 196);
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+#relative {
+  margin-left: 5%;
+}
+
+.listGrid {
+  position: fixed;
+  top: 300px;
+  overflow-y: scroll;
+  height: 55vh;
+}
+
+.listGrid .student:hover {
+  background-color: rgb(208, 208, 208);
+  cursor: pointer;
+}
+
+#searchFieldDiv {
+  display: flex;
+  position: fixed;
+  top: 170px;
+  margin-left: 6.5%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#legend {
+  display: flex;
+  margin-left: 5%;
+  position: fixed;
+  top: 250px;
+}
